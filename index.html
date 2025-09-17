@@ -60,25 +60,23 @@
     <nav class="fixed w-full z-50 glass-effect bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/20 dark:border-gray-700/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-16">
-            
-            <!-- Logo -->
-            <div class="flex items-center animate-fade-in-down">
+      
+            <!-- Left: Logo + Menu -->
+            <div class="flex items-center space-x-8 animate-fade-in-down">
               <a href="#home">
-                <!-- Light mode logo -->
                 <img src="images/logotransparent.png" alt="AVTOMAT.online Logo" class="logo-lg">
               </a>
+              <!-- Desktop Menu -->
+              <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                <a href="#features" class="hover:text-primary transition-colors">Features</a>
+                <a href="#how-it-works" class="hover:text-primary transition-colors">How It Works</a>
+                <a href="#pricing" class="hover:text-primary transition-colors">Pricing</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+              </div>
             </div>
       
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
-              <a href="#home" class="hover:text-primary transition-colors">Home</a>
-              <a href="#features" class="hover:text-primary transition-colors">Features</a>
-              <a href="#how-it-works" class="hover:text-primary transition-colors">How It Works</a>
-              <a href="#pricing" class="hover:text-primary transition-colors">Pricing</a>
-              <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
-            </div>
-      
-            <!-- Theme Toggle & Mobile Menu -->
+            <!-- Right: Theme Toggle & Mobile Menu Button -->
             <div class="flex items-center space-x-4">
               <!-- Theme Toggle -->
               <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
@@ -116,46 +114,46 @@
           </div>
         </div>
       </nav>
-      
+            
 
     <!-- Hero Section -->
     <section id="home"
-    class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat py-20"
-    style="background-image: url('https://images.unsplash.com/photo-1658243762588-bbe78d88f4aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzkzfHxBSSUyMFJvYm90JTIwUG93ZXJlZCUyMGNvZGUlMjBUZXN0aW5nJTIwUmV2b2x1dGlvbnxlbnwwfHwwfHx8MA%3D%3D');">
-  
+    class="relative min-h-[70vh] flex items-center bg-cover bg-center bg-no-repeat py-20"
+    style="background-image: url('https://images.unsplash.com/photo-1614853036460-e8cff7410ee9?q=80&w=1470&auto=format&fit=crop');">
+    
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/50"></div>
-  
+    
     <!-- Content -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-center min-h-screen gap-12">
-  
-<!-- Left Text -->
-<div class="flex flex-col justify-center items-center lg:items-center text-center text-white max-w-xl animate-fade-in-up min-h-[60vh] lg:min-h-full">
-  <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-    <span class="gradient-text">AI-Powered</span><br>
-    Testing Revolution
-  </h1>
-  <p class="text-xl text-gray-200 mb-8 leading-relaxed">
-    Pay only for defects found. No subscriptions, no overhead. AVTOMAT.online uses advanced AI 
-    to automate testing and charges you only when real issues are discovered.
-  </p>
-  <a href="https://www.linkedin.com/company/avtomat-online/posts/?feedView=all"
-     target="_blank" rel="noopener noreferrer"
-     class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold">
-    Start Free Trial
-  </a>
-</div>
-
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-center min-h-[70vh] gap-12">
+      
+      <!-- Left Text -->
+      <div class="flex flex-col justify-center items-center lg:items-center text-center text-white max-w-xl animate-fade-in-up">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+          <span class="gradient-text">AI-Powered</span><br>
+          Testing Revolution
+        </h1>
+        <p class="text-xl text-gray-200 mb-8 leading-relaxed">
+          Pay only for defects found. No subscriptions, no overhead. AVTOMAT.online uses advanced AI 
+          to automate testing and charges you only when real issues are discovered.
+        </p>
+        <a href="https://www.linkedin.com/company/avtomat-online/posts/?feedView=all"
+           target="_blank" rel="noopener noreferrer"
+           class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold">
+          Start Free Trial
+        </a>
+      </div>
+      
       <!-- Right Image -->
       <div class="flex justify-center lg:justify-end items-center animate-float">
         <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop&crop=center"
              alt="AI Testing Dashboard"
              class="rounded-2xl shadow-2xl">
       </div>
-  
+      
     </div>
   </section>
-  
+    
       
 
     <!-- Features Section -->
@@ -481,7 +479,7 @@
     style="background-image: url('https://images.unsplash.com/photo-1730130054404-c2bd8e7038c2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=1920&auto=format&fit=crop');">
   
     <!-- Overlay for readability -->
-    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="absolute inset-0 bg-black/70"></div>
   
     <!-- Content -->
     <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 text-white">
