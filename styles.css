@@ -28,7 +28,6 @@
   }
 }
 
-
 .gradient-text {
   background: linear-gradient(135deg, #6366f1, #8b5cf6, #10a145);
   -webkit-background-clip: text;
@@ -43,4 +42,8 @@
 .logo-lg {
   height: 3rem; /* 96px */
   width: auto;
+}
+
+#theme-toggle {
+  margin-left: 48px !important;
 }

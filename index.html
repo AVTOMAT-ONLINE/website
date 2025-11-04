@@ -54,8 +54,8 @@
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <!-- Left: Logo + Menu -->
-          <div class="flex items-center space-x-8 animate-fade-in-down">
+          <!-- Left: Logo -->
+          <div class="flex items-center animate-fade-in-down">
             <a>
               <img
                 src="images/logotransparent.png"
@@ -63,7 +63,10 @@
                 class="logo-lg"
               />
             </a>
+          </div>
 
+          <!-- Right: Menu + Theme Toggle + Mobile Button -->
+          <div class="flex items-center space-x-6 animate-fade-in-down">
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-12">
               <a
@@ -106,16 +109,12 @@
                 <span>Contact</span>
               </a>
             </div>
-          </div>
 
-          <!-- Right: Theme Toggle & Mobile Menu Button -->
-          <div class="flex items-center space-x-4">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle"
               class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             >
-              <!-- Dark mode icon -->
               <svg
                 id="theme-toggle-dark-icon"
                 class="hidden w-5 h-5"
@@ -126,7 +125,6 @@
                   d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
                 ></path>
               </svg>
-              <!-- Light mode icon -->
               <svg
                 id="theme-toggle-light-icon"
                 class="hidden w-5 h-5"
@@ -179,8 +177,7 @@
         </div>
       </div>
 
-      <!-- Mobile Menu -->
-
+      <!-- Mobile Menu (unchanged) -->
       <div
         id="mobile-menu"
         class="hidden md:hidden glass-effect bg-white/95 dark:bg-gray-900/95 border-t border-gray-200/20 dark:border-gray-700/20"
@@ -190,7 +187,6 @@
             href="#home"
             class="flex items-center gap-3 px-4 py-3 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-primary transition-colors"
           >
-            <!-- Home icon -->
             <span class="material-icons text-lg">home</span>
             <span class="ml-1">Home</span>
           </a>
